@@ -6,6 +6,7 @@ div.menu{
     top: 0;
     background-color: #2b2b2b;
     transition: 300ms;
+    z-index: 999;
 }
 div.menu>nav{
     width: inherit;
@@ -82,4 +83,39 @@ label[for=close]{
 }
 #close:checked ~ div.menu{
     left: -100%;
+}
+div.parallax{
+    width: 100%;
+    height: calc(100vh - 40px);
+    background: url(../../images/Fantasy_Dandelion_in_the_robot_arm_107914_.jpg) center center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+}
+div.parallax>div.slogan{
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(50, 53, 53, 0.6);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 5px 5px 25px black;
+    transition: 300ms;
+    border-radius: 10px;
+}
+div.parallax>div.slogan>h1{
+    color: whitesmoke;
+    margin-bottom: 10px;
+    text-align: center;
+}
+div.parallax>div.slogan>p{
+    color: whitesmoke;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 20px;
+}
+div.parallax>div.slogan:hover{
+    backdrop-filter: blur(5px);
 }
